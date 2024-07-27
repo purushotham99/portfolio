@@ -12,6 +12,7 @@ import { SideNavbar } from '../components/nav/SideNavbar';
 import { Works } from '../components/works/Works';
 import { About } from '../components/about/About';
 import { Contact } from '../components/contact/Contact';
+import { SimpleForm } from '../components/llm/llm';
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -43,6 +44,7 @@ export const Home = () => {
       <Works />
       <About />
       <Contact />
+      <SimpleForm/>
     </>
   );
 };

@@ -10,9 +10,6 @@ import './Works.css';
 // Import ../../assets/recentprojects/
 import Portfolio from '../../assets/recentprojects/react-portfolio.png';
 import Veritru from '../../assets/recentprojects/veritru.png';
-import Lofo from '../../assets/recentprojects/lofo.png';
-import Startup from '../../assets/recentprojects/startup.png';
-import Lacalle from '../../assets/recentprojects/lacalle.png';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -27,47 +24,22 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     { 
       id: 1,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
+      title: 'Project Spyglass - J&J', 
+      description: `I combined diverse techniques in NLP including entity extraction, 
+                    text preprocessing and extracting contextual similarity from clinical studies 
+                    to extract key insights from the studies. Additionally, I was instrumental in 
+                    shaping the architecture of an NLP project, ensuring its successful implementation.`,
+      alter: 'Project Spyglass',
       image: `${Portfolio}`,
     },
     { 
       id: 2,
-      title: 'VeriTru Project', 
-      description: `An advocacy project website built using
-      MEAN stack with fact-checking tool to promote actions against
-      fake news.`,
+      title: 'VLife - Virtusa', 
+      description: `Virtusa’s Centre of Excellence team - vLife, Our focus was to develop cutting-edge ML solutions for healthcare. vLife has a suite of 300 plus solutions supporting companies such as J&J, Cigna etc.
+Here, I developed multiple ML solutions in the domain of Medicine. Claims adjudication, Medical Entity Extraction, ColBERT are some of the prominent solutions that I built.`,
       alter: 'VeriTru Project',
       image: `${Veritru}`,
-    },
-    { 
-      id: 3,
-      title: 'LoFo Project', 
-      description: `Logistics and Forwarding website built using
-      ReactJS to design and develop its front-end.`,
-      alter: 'LoFo Project',
-      image: `${Lofo}`,
-    },
-    { 
-      id: 4,
-      title: 'Startup Project', 
-      description: `A website portfolio project for the Startup Dev Team
-      built using MEVN stack to demonstrate the CRUD capabilities of the tech stack.`,
-      alter: 'Startup Project',
-      image: `${Startup}`,
-    },
-    { 
-      id: 5,
-      title: 'LaCalle Cafe', 
-      description: `A website project for the La Calle Cafe business
-      built using Wordpress and PHP with integrated SEO tools to help
-      the business ramp up its prospects and lead generation.`,
-      alter: 'Startup Project',
-      image: `${Lacalle}`,
-    },
+    }
   ]);
 
   return (

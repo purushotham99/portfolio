@@ -35,7 +35,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const jobDescription = { jobDescription: message };
-    
+    console.log(process.env.REACT_APP_API_URL + "/llm");
     try {
       const response = await fetch(process.env.REACT_APP_API_URL + "/llm", {
         method: 'POST',
